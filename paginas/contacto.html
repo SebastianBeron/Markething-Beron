@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Markethink</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../style.css">
+        <!-- fuente de google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/30806639c1.js" crossorigin="anonymous"></script>
+        <!--  -->
+    </head>
+    <body>
+
+        <header>
+            <div class="menu"> 
+                <img class="logo1" src="../imagenes/LogoEnBajapng.png" alt="Logo MarkeThink">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Index</a></li>
+                        <li><a href="../paginas/nosotros.html"> Nosotros</a> </li>
+                        <li><a href="../paginas/servicios.html"> Servicios </a> </li>
+                        <li><a href="../paginas/trabajos.html"> Proyectos </a> </li>
+                        <li><a href="../paginas/tarifario.html"> Tarifario </a> </li>
+                        <li><a href=""> Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>  
+<div class="formularioContacto"> 
+<form action="solicitudContacto">
+    <div>
+        <label for="Nombre"> Nombre </label>
+        <input type="text" id="Nombre">
+    </div>
+    <div>
+        <label for="Apellido"> Apellido </label>
+        <input type="text" id="Apellido">
+    </div>
+    <div>
+        <label for="emailContact"> Email </label>
+        <input type="emailContact" id="emailContact">
+    </div>
+    <br> 
+    <div>
+        <input type="radio" id="Community Manager" name="servicio" value="Community Manager">
+        <label for="Community Manager"> Community Manager </label><br>
+        <input type="radio" id="pagina web" name="servicio" value="Página Web">
+        <label for="pagina web"> Página web</label><br>
+        <input type="radio" id="fotoproducto" name="servicio" value="Fotoproducto">
+        <label for="fotoproducto">Fotoproducto</label><br>
+        <input type="radio" id="video" name="servicio" value="Video">
+        <label for="video"> Video </label><br>
+        <input type="radio" id="diseño" name="servicio" value="Diseño">
+        <label for="diseño"> Diseño </label><br>
+    </div>
+  <br>
+    <div>
+        <label for="servicio">Elija un servicio:</label>
+        <select name="servicio" id="servicio">
+            <option value="">Elija un servicio</option>
+            <option value="Community Manager">Community Manager</option>
+            <option value="Fotoproducto">Fotoproducto</option>
+            <option value="pagina web">Página web</option>
+            <option value="video">Video</option>
+            <option value="diseño">Diseño</option>
+        </select>
+    </div>
+    <br>
+    <div>    
+        <textarea placeholder="Escribi aca tu mensaje"></textarea><br>
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar todo">
+    </div>
+</form>  
+</div>
+</body>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="../imagenes/LogoProvisorio.png" alt="Logo de MARKETHING">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>MANTENETE AL DÍA</h2>
+            <p>En MARKETHING publicamos a diario consejos y todas las novedades relacionadas a nuestro rubro.</p>
+        </div>
+        <div class="box">
+            <h2>SEGUINOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+                <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>© 2022 <b>MARKETHING</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+</body>
+</html>
