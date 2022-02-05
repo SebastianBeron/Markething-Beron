@@ -5,17 +5,9 @@
   }
   
   /* inicio de nav */
-
-  @media screen and (min-width: 768px) {
-    .menu a {
-        float: none;
-        width: 100%;
-      }
+ 
     
-
-    
-    
-  .cuerpoIndex{
+.cuerpoIndex{
     display: grid;
     grid-template-areas:
       "cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
@@ -34,10 +26,10 @@
     content:'';
     display: table;
     height: 5vh;
-  }
+  } */
   
 .menu {
-    width: 95%;
+    width: 100%;
     text-align: center;
     margin-top: auto;
     align-items: center;
@@ -46,7 +38,7 @@
 
 
 .logo1 {
-    width: 20%;
+    width: 25%;
     height: 5%;
     float: left;
     padding: 1vh;
@@ -54,13 +46,12 @@
     align-self: center;
   }
   
-  nav {
+.nav {
     float: right;
-    align-self: center;
-   
-  }
+    align-self: center; 
+}
   
-  nav ul li {
+.nav ul li {
     list-style: none;
     margin-left: 75px;
     padding: 1vh 1vh;
@@ -71,28 +62,28 @@
    
   }
   
-  nav ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 700;
-    margin: auto;
-    align-self: center;
-  }
+.nav ul li a {
+  text-decoration: none;
+  color:white;
+  font-weight: 700;
+  margin: auto;
+  align-self: center;
+}
   
-  nav ul li a::before {
-    display: block;
-    content: '';
-    width: 0%;
-    background: linear-gradient(to right,rgb(138, 41, 250), rgb(57, 57, 246) ,rgb(17, 144, 194) , aquamarine);
-    height: 5px;
-    bottom: 1px;
-    position: absolute;
-    transition: width 0.2s;
-  }
+.nav ul li a::before {
+  display: block;
+  content: '';
+  width: 0%;
+  background: linear-gradient(to right,rgb(138, 41, 250), rgb(57, 57, 246) ,rgb(17, 144, 194) , aquamarine);
+  height: 5px;
+  bottom: 1px;
+  position: absolute;
+  transition: width 0.2s;
+}
   
-  nav ul li a:hover::before {
-    width: 85%;
-  }
+.nav ul li a:hover::before {
+  width: 85%;
+}
 /* fin del nav */
 
   /*:::::Pie de Pagina*/
@@ -198,32 +189,44 @@ div.pie{
 
 /* cuerpo INDEX*/
 
-.example {
+
+
+.indexBody{
+  background-color: #0d2033;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  height: auto;
+  align-items:center;
+}
+
+.textIndex {
 		text-align: right;
-		font-size: 1vw;
-		padding: 2vw;
-		width: 60%;
-		border: solid;
+		font-size: 1.2vw;		
     grid-area: cuerpo;
 	}
 
-  .manos {
-    width: 30%;
-    height: 400px; 
-    float: right;
+  .manitasIndex {
     grid-area: imgLado;
-	}
+    width: 200px;
+    align-items: right;
+
+  }
+
+
+  
 
   .containerMain{
     background-color: #0d2033;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    height:500px;
+    height: 600px;
     align-items:center;
-    justify-content:space-around
+    justify-content:normal;
+ 
   }
-
+  
   /* fin del cuerpo INDEX */
 
 /* inicio NOSOTROS */
@@ -383,3 +386,13 @@ h1 {
 .tablaTarifario {
   width: 600px;
 }
+@media only screen and (max-width: 767px){
+	.footerFlex{display: flex;flex-direction: column;}
+}
+
+@media only screen and (min-width: 1024px){
+  .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
+  .footerFlex{display: flex;justify-content: space-around;}
+  }
+
+  
