@@ -1,0 +1,67 @@
+.cuerpoNosotros{
+  display: grid;
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
+    "fotoder fotoder detalle1 detalle1 detalle1 detalle1 detalle1 detalle1"
+    "detalle2 detalle2 detalle2 detalle2 detalle2 detalle2 fotoizq fotoizq"
+    "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina"
+    ;
+}
+
+.containerNacho{
+  background-color: #0d2033;
+  display:flex;
+/* flex-direction:row;
+  flex-wrap:wrap; */
+  height:100%;
+  align-items:center;
+  }
+
+.descNacho {
+    grid-area: detalle2;
+		text-align: right;
+		font-size: 1.8vw;
+		padding: 2vw;
+		width: 70%;
+    background-color: #0d2033;
+		
+	}
+
+.fotoIgnacio {
+    grid-area: fotoizq;
+    width: 50%;
+    height: 300px; 
+    float: left;
+    object-fit: scale-down;
+    background-color: #0d2033;
+	}
+
+.containerSeba{
+  background-color: #0d2033;
+  display:flex;
+/*   flex-direction:row;
+  flex-wrap:wrap;
+  height:500px; */
+  height:100%;
+  align-items:center;
+  }
+
+  .descSeba {
+    grid-area: detalle1;
+		text-align: left;
+		font-size: 1.8vw;
+		padding: 2vw;
+		width: 70%;
+    background-color: #0d2033;
+		
+	}
+
+.fotoSebastian {
+    grid-area: fotoder;
+    width: 40%;
+    height: 300px; 
+    float: right;
+    object-fit: scale-down;
+    background-color: #0d2033;
+	}
+ /* fin NOSOTROS */ 
